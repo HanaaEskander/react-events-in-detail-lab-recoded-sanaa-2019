@@ -2,9 +2,11 @@
 import React, {Component} from 'react';
 
  class CoordinatesButton extends Component{
+ 
+ 
   getMouseCoordinates = (data) =>{
-    let coor = [data.clientX,data.clientY];
-    this.props.onReceiveCoordinates(coor);
+    let coord = [data.clientX,data.clientY];
+    this.props.onReceiveCoordinates(coord);
   }
 
   render(){
