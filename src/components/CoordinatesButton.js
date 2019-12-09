@@ -4,14 +4,14 @@ import React, {Component} from 'react';
  class CoordinatesButton extends Component{
  
  
-  getMouseCoordinates = (data) =>{
+  findMouseCoordinates = (data) =>{
     let coord = [data.clientX,data.clientY];
     this.props.onReceiveCoordinates(coord);
   }
 
   render(){
     return(
-      <button onClick={this.getMouseCoordinates}>Find Coord.</button>
+      <button onClick={this.findMouseCoordinates}>Find Coord.</button>
     );
   }
 }
